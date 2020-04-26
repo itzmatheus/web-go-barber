@@ -31,13 +31,12 @@ module.exports = {
     camelcase: "off",
     "no-console": ["error", { allow: ["tron"] }],
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
-  },
-  settings: {
-    "import/resolver": {
-      "babel-plugin-root-import": {
-        rootPathSuffix: "src"
-      },
-    },
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-props-no-spreading": [<enabled>, {
+      "html": "ignore" | "enforce",
+      "custom": "ignore" | "enforce",
+      "explicitSpread": "ignore" | "enforce",
+      "exceptions": [<string>]
+  }]
   },
 };
