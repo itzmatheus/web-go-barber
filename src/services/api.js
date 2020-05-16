@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://161.35.105.205/barber/api/v1/',
+  baseURL: 'https://matheusleite.site/barber/api/v1',
 });
 
 export default api;
